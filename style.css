@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "outfit";
+  src: url("fonts/outfit/Outfit-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "youngserif";
+  src: url("fonts/young-serif/YoungSerif-Regular.ttf");
+}
+body {
+  background-color: hsl(30, 54%, 90%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "outfit";
+  color: hsl(30, 10%, 34%);
+}
+.recipe-box {
+  background-color: hsl(0, 0%, 100%);
+  width: 720px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 120px;
+  margin-bottom: 130px;
+  border-radius: 24px;
+}
+.recipe-box .header img {
+  width: 89%;
+  border-radius: 12px;
+  display: block;
+  margin: auto;
+  margin-top: 40px;
+}
+.recipe-box .main .recipe-name {
+  padding: 22px;
+}
+.recipe-box .main .recipe-name h1 {
+  font-family: "youngserif";
+  font-weight: 100;
+  font-size: 39px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-top: 0;
+  color:hsl(24, 5%, 18%);
+}
+.recipe-box .main .recipe-name p {
+  font-size: 16px;
+  padding: 10px;
+  line-height: 22px;
+  padding-left: 20px;
+}
+.recipe-box .main .prep-time {
+  line-height: 30px;
+  background-color: hsl(330, 100%, 98%);
+  padding: 22px;
+  width: 90%;
+  margin: auto;
+  border-radius: 12px;
+}
+.recipe-box .main .prep-time h1 {
+}
+.recipe-box .main .prep-time ul {
+  padding-left: 22px;
+  list-style-type: none;
+}
+
+.recipe-box .main .prep-time ul li {
+  position: relative;
+  padding-left: 20px;
+}
+
+.recipe-box .main .prep-time ul li::before {
+  content: "•"; /* بولت سفارشی */
+  color: hsl(332, 51%, 32%); /* رنگ بولت */
+  font-size: 1.4em; /* اندازه کوچکتر بولت */
+  position: absolute;
+  left: -12px;
+  top: 1px;
+}
+.recipe-box .main .prep-time h3 {
+  padding: 5px;
+  color: hsl(332, 51%, 32%);
+  font-size: 20px;
+}
+.recipe-box .main .ingredients {
+  padding: 20px;
+}
+.recipe-box .main .ingredients h2 {
+  color: hsl(14, 45%, 36%);
+  font-family: "youngserif";
+  font-weight: 500;
+  font-size: 28px;
+  margin: 15px;
+}
+.recipe-box .main .ingredients ul {
+  list-style-type: none;
+  padding-left: 55px;
+  line-height: 33px;
+}
+.recipe-box .main .ingredients ul li {
+  position: relative;
+}
+.recipe-box .main .ingredients ul li::before {
+  position: absolute;
+  content: ".";
+  color: brown;
+  font-size: 2em;
+  left: -35px;
+  bottom: 10px;
+}
+ .hr-one {
+  width: 90%;
+  margin: 6px auto;
+}
+.recipe-box .main .instructions {
+  /* background-color: blue; */
+  margin: 35px;
+}
+.recipe-box .main .instructions h2 {
+  color: hsl(14, 45%, 36%);
+  font-family: "youngserif";
+  font-weight: 500;
+  font-size: 28px;
+  /* margin: 25px; */
+}
+.recipe-box .main .instructions ol li {
+  position: relative;
+  padding-left: 15px;
+  margin: 9px 0;
+}
+.recipe-box .main .instructions ol li::before {
+  content: counter(item) ". ";
+  counter-increment: item;
+  position: absolute;
+  left: 0;
+  color: hsl(14, 45%, 36%); /* رنگ اعداد */
+  font-weight: bold;
+  left: -20px;
+}
+.recipe-box .main .instructions ol {
+  /* background-color: blueviolet; */
+  margin: 15px;
+  /* width: 94%; */
+  padding-left: 10px;
+  line-height: 22px;
+  list-style-type: none;
+  counter-reset: item;
+}
+ .hr-two{
+  width: 90%;
+  margin: 5px auto;
+
+}
+.recipe-box .main .nutrition{
+  margin: 35px;
+  line-height: 25px;
+}
+.recipe-box .main .nutrition h2{
+  color: hsl(14, 45%, 36%);
+  font-family: "youngserif";
+  font-weight: 500;
+  font-size: 28px;
+}
+.recipe-box .main .nutrition p{
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+.recipe-box .main .nutrition table{
+  width: 90%;
+  margin: 8px auto;
+}
+.recipe-box .main .nutrition table td{
+  width: 50%;
+}
+.recipe-box .main .nutrition table .num{
+  color: hsl(14, 45%, 36%);
+  font-weight: 800;
+
+}
+.recipe-box hr{
+  height: 1px;
+  background-color: hsl(30, 18%, 87%);
+  border: none;
+}
